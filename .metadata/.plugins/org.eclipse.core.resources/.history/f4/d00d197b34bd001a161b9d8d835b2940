@@ -1,0 +1,22 @@
+package ctr;
+
+import java.util.concurrent.locks.ReentrantReadWriteLock;
+
+class Leser extends Thread { 
+	
+	private Speicher speicherLeser;
+	private ReentrantReadWriteLock.ReadLock lockLeser; 
+	
+	Leser(Speicher speicher, ReentrantReadWriteLock.ReadLock lock) {
+		this.lockLeser = lock;
+		this.speicherLeser = speicher;
+	}
+	
+	public void run() {
+		
+		for(int i = 0;i< speicherLeser.size(); i++) {
+			
+			speicherLeser.readLine(i);
+		}
+	}
+}

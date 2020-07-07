@@ -1,0 +1,19 @@
+package ctr;
+
+public class Philosoph extends Thread {
+
+	private int[] forks;
+	
+	public Philosoph(int[] f) {
+		this.forks = f;
+	}
+	
+	public void run(){
+		
+		
+		
+	}
+	
+	
+	
+}

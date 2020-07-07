@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="java.util.concurrent.locks.ReentrantReadWriteLock"/>
+<fullyQualifiedTypeName name="java.util.concurrent.locks.ReentrantReadWriteLock.WriteLock"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="ctr.Main.SemaphoreGroup"/>
+<fullyQualifiedTypeName name="java.lang.UnknownError"/>
+<fullyQualifiedTypeName name="ctr.SemaphoreGroup"/>
+<fullyQualifiedTypeName name="ctr.Philosoph"/>
+</qualifiedTypeNameHistroy>

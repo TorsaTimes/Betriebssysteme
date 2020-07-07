@@ -1,0 +1,344 @@
+13:03:46 **** Rebuild of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+14:50:31 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+15:35:09 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+..\src\HelloPThread.c: In function 'put':
+..\src\HelloPThread.c:27:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+   printf("[put]:: Thread %d geraet in WAITING \n",pthread_self());
+                          ~^                       ~~~~~~~~~~~~~~
+                          %I64d
+..\src\HelloPThread.c:27:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+   printf("[put]:: Thread %d geraet in WAITING \n",pthread_self());
+                          ~^                       ~~~~~~~~~~~~~~
+                          %I64d
+..\src\HelloPThread.c:32:26: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+  printf("[put]:: Thread %d macht weiter \n ", pthread_self());
+                         ~^                    ~~~~~~~~~~~~~~
+                         %I64d
+..\src\HelloPThread.c:32:26: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+  printf("[put]:: Thread %d macht weiter \n ", pthread_self());
+                         ~^                    ~~~~~~~~~~~~~~
+                         %I64d
+..\src\HelloPThread.c: In function 'consumer':
+..\src\HelloPThread.c:38:24: error: 'mutex' undeclared (first use in this function)
+   pthread_mutex_lock (&mutex);
+                        ^~~~~
+..\src\HelloPThread.c:38:24: note: each undeclared identifier is reported only once for each function it appears in
+..\src\HelloPThread.c:39:3: warning: implicit declaration of function 'get'; did you mean 'getw'? [-Wimplicit-function-declaration]
+   get();
+   ^~~
+   getw
+..\src\HelloPThread.c: At top level:
+..\src\HelloPThread.c:44:6: warning: conflicting types for 'get'
+ void get() {
+      ^~~
+..\src\HelloPThread.c:39:3: note: previous implicit declaration of 'get' was here
+   get();
+   ^~~
+..\src\HelloPThread.c: In function 'get':
+..\src\HelloPThread.c:47:31: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+   printf("[consume]:: Thread %d hat Zahl %d konsumiert\n ", pthread_self(), data);
+                              ~^                             ~~~~~~~~~~~~~~
+                              %I64d
+..\src\HelloPThread.c:47:31: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+   printf("[consume]:: Thread %d hat Zahl %d konsumiert\n ", pthread_self(), data);
+                              ~^                             ~~~~~~~~~~~~~~
+                              %I64d
+..\src\HelloPThread.c:51:26: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+  printf("[get]:: Thread %d macht weiter \n ", pthread_self());
+                         ~^                    ~~~~~~~~~~~~~~
+                         %I64d
+..\src\HelloPThread.c:51:26: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+  printf("[get]:: Thread %d macht weiter \n ", pthread_self());
+                         ~^                    ~~~~~~~~~~~~~~
+                         %I64d
+..\src\HelloPThread.c: In function 'produce':
+..\src\HelloPThread.c:59:24: error: 'mutex' undeclared (first use in this function)
+   pthread_mutex_lock (&mutex);
+                        ^~~~~
+..\src\HelloPThread.c:61:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+   printf("[producer]:: Thread %d hat Zahl %d produziert \n", pthread_self(), number);
+                               ~^                             ~~~~~~~~~~~~~~
+                               %I64d
+..\src\HelloPThread.c:61:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+   printf("[producer]:: Thread %d hat Zahl %d produziert \n", pthread_self(), number);
+                               ~^                             ~~~~~~~~~~~~~~
+                               %I64d
+15:39:48 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+..\src\HelloPThread.c: In function 'put':
+..\src\HelloPThread.c:27:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+   printf("[put]:: Thread %d geraet in WAITING \n",pthread_self());
+                          ~^                       ~~~~~~~~~~~~~~
+                          %I64d
+..\src\HelloPThread.c:27:27: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+   printf("[put]:: Thread %d geraet in WAITING \n",pthread_self());
+                          ~^                       ~~~~~~~~~~~~~~
+                          %I64d
+..\src\HelloPThread.c:32:26: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+  printf("[put]:: Thread %d macht weiter \n ", pthread_self());
+                         ~^                    ~~~~~~~~~~~~~~
+                         %I64d
+..\src\HelloPThread.c:32:26: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+  printf("[put]:: Thread %d macht weiter \n ", pthread_self());
+                         ~^                    ~~~~~~~~~~~~~~
+                         %I64d
+..\src\HelloPThread.c: In function 'consumer':
+..\src\HelloPThread.c:39:3: warning: implicit declaration of function 'get'; did you mean 'getw'? [-Wimplicit-function-declaration]
+   get();
+   ^~~
+   getw
+..\src\HelloPThread.c: At top level:
+..\src\HelloPThread.c:44:6: warning: conflicting types for 'get'
+ void get() {
+      ^~~
+..\src\HelloPThread.c:39:3: note: previous implicit declaration of 'get' was here
+   get();
+   ^~~
+..\src\HelloPThread.c: In function 'get':
+..\src\HelloPThread.c:47:31: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+   printf("[consume]:: Thread %d hat Zahl %d konsumiert\n ", pthread_self(), data);
+                              ~^                             ~~~~~~~~~~~~~~
+                              %I64d
+..\src\HelloPThread.c:47:31: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+   printf("[consume]:: Thread %d hat Zahl %d konsumiert\n ", pthread_self(), data);
+                              ~^                             ~~~~~~~~~~~~~~
+                              %I64d
+..\src\HelloPThread.c:51:26: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+  printf("[get]:: Thread %d macht weiter \n ", pthread_self());
+                         ~^                    ~~~~~~~~~~~~~~
+                         %I64d
+..\src\HelloPThread.c:51:26: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+  printf("[get]:: Thread %d macht weiter \n ", pthread_self());
+                         ~^                    ~~~~~~~~~~~~~~
+                         %I64d
+..\src\HelloPThread.c: In function 'produce':
+..\src\HelloPThread.c:61:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+   printf("[producer]:: Thread %d hat Zahl %d produziert \n", pthread_self(), number);
+                               ~^                             ~~~~~~~~~~~~~~
+                               %I64d
+..\src\HelloPThread.c:61:32: warning: format '%d' expects argument of type 'int', but argument 2 has type 'pthread_t' {aka 'long long unsigned int'} [-Wformat=]
+   printf("[producer]:: Thread %d hat Zahl %d produziert \n", pthread_self(), number);
+                               ~^                             ~~~~~~~~~~~~~~
+                               %I64d
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+15:47:57 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+..\src\HelloPThread.c: In function 'consumer':
+..\src\HelloPThread.c:39:3: warning: implicit declaration of function 'get'; did you mean 'getw'? [-Wimplicit-function-declaration]
+   get();
+   ^~~
+   getw
+..\src\HelloPThread.c: At top level:
+..\src\HelloPThread.c:44:6: warning: conflicting types for 'get'
+ void get() {
+      ^~~
+..\src\HelloPThread.c:39:3: note: previous implicit declaration of 'get' was here
+   get();
+   ^~~
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+15:50:33 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+..\src\HelloPThread.c: In function 'consumer':
+..\src\HelloPThread.c:39:3: warning: implicit declaration of function 'get'; did you mean 'getw'? [-Wimplicit-function-declaration]
+   get();
+   ^~~
+   getw
+..\src\HelloPThread.c: At top level:
+..\src\HelloPThread.c:44:6: warning: conflicting types for 'get'
+ void get() {
+      ^~~
+..\src\HelloPThread.c:39:3: note: previous implicit declaration of 'get' was here
+   get();
+   ^~~
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+15:52:13 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+..\src\HelloPThread.c: In function 'consumer':
+..\src\HelloPThread.c:42:3: warning: implicit declaration of function 'get'; did you mean 'getw'? [-Wimplicit-function-declaration]
+   get();
+   ^~~
+   getw
+..\src\HelloPThread.c: At top level:
+..\src\HelloPThread.c:47:6: warning: conflicting types for 'get'
+ void get() {
+      ^~~
+..\src\HelloPThread.c:42:3: note: previous implicit declaration of 'get' was here
+   get();
+   ^~~
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+15:53:09 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+..\src\HelloPThread.c: In function 'consumer':
+..\src\HelloPThread.c:43:3: warning: implicit declaration of function 'get'; did you mean 'getw'? [-Wimplicit-function-declaration]
+   get();
+   ^~~
+   getw
+..\src\HelloPThread.c: At top level:
+..\src\HelloPThread.c:48:6: warning: conflicting types for 'get'
+ void get() {
+      ^~~
+..\src\HelloPThread.c:43:3: note: previous implicit declaration of 'get' was here
+   get();
+   ^~~
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+16:06:29 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+16:09:43 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+16:15:41 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+16:16:10 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+16:17:07 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+16:18:22 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+16:18:51 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+16:19:46 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+16:20:02 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+16:20:44 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+..\src\HelloPThread.c: In function 'main':
+..\src\HelloPThread.c:95:1: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+ sleep(1);
+ ^~~~~
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+16:21:19 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+..\src\HelloPThread.c: In function 'main':
+..\src\HelloPThread.c:95:1: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+ sleep(1);
+ ^~~~~
+..\src\HelloPThread.c:84:11: warning: unused variable 'consumerThread2' [-Wunused-variable]
+ pthread_t consumerThread2;
+           ^~~~~~~~~~~~~~~
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+16:23:23 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+..\src\HelloPThread.c: In function 'main':
+..\src\HelloPThread.c:94:1: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+ sleep(1);
+ ^~~~~
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+16:29:04 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+..\src\HelloPThread.c: In function 'main':
+..\src\HelloPThread.c:91:1: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+ sleep(1);
+ ^~~~~
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+16:35:32 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+13:45:13 **** Rebuild of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+13:46:23 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+14:23:44 **** Incremental Build of configuration Debug for project HelloPThread ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -pthread -o "src\\HelloPThread.o" "..\\src\\HelloPThread.c" 
+gcc -o HelloPThread "src\\HelloPThread.o" -lpthread 
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread
+Info: Nothing to build for HelloPThread

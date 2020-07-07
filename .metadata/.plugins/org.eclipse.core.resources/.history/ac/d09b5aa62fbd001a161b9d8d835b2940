@@ -1,0 +1,17 @@
+package ctr;
+
+import java.util.concurrent.locks.ReentrantReadWriteLock;
+
+class Schreiber extends Thread { 
+	
+	Schreiber(Speicher speicher, String[] text, int zahlWiederholungen, ReentrantReadWriteLock.WriteLock lock){
+		
+	}
+	
+	
+	
+	public void run() {
+		
+	}
+	
+}

@@ -1,0 +1,16 @@
+package ctr;
+
+public class Main extends UnknownError {
+	
+
+	public static void main(String[] args) {
+		
+	SemaphoreGroup SM = new SemaphoreGroup(5);//{0 1 2 3 4 }
+	
+	Philosoph p1 = new Philosoph()
+	
+		
+
+	}
+
+}
